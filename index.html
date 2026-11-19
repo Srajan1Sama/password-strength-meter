@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password Strength</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Password Strength</h2>
+
+        <!-- Password input -->
+        <input
+            type="password"
+            id="password"
+            placeholder=""
+        >
+
+        <!-- Show password checkbox -->
+        <div class="show">
+            <input type="checkbox" id="showPassword">
+            <label for="showPassword">Show password</label>
+        </div>
+
+        <!-- Strength bar -->
+        <div class="strength-bar">
+            <div id="strengthFill"></div>
+        </div>
+
+        <!-- Strength text -->
+        <p id="strengthText"></p>
+
+        <!-- Password rules -->
+        <ul>
+            <li id="length">At least 8 characters</li>
+            <li id="uppercase">One uppercase letter</li>
+            <li id="lowercase">One lowercase letter</li>
+            <li id="number">One number</li>
+            <li id="special">One special symbol (@, #, $, ...)</li>
+        </ul>
+
+    </div>
+
+</body>
+</html>
